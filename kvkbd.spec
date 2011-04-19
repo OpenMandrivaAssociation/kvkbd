@@ -3,7 +3,7 @@ Name:           kvkbd
 BuildRequires:  libxslt-devel task-kde4-devel
 License:        GPLv2+
 Url:            http://kde-apps.org/content/show.php/Kvkbd+-+KDE4?content=94374
-Group:          System/GUI/KDE
+Group:          Graphical desktop/KDE 
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Summary:        A virtual keyboard for KDE
 Version:        0.6
@@ -19,13 +19,13 @@ Kvkbd is a virtual keyboard for KDE, it contains many feature like system tray a
 %patch1
 
 %build
-  %cmake_kde4
-  %make
+%cmake_kde4
+%make
 
 %install
+rm -rf $RPM_BUILD_ROOT
 install -d %{buildroot}/%{_bindir}/kvkbd
 install -d %{buildroot}/%{_datadir}/applications/kvkbd.desktop
-# install -d %{buildroot}/%{_datadir}/kvkbd
 install -d %{buildroot}/%{_docdir}/HTML/en/kvkbd
 
 
@@ -36,6 +36,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %{_bindir}/kvkbd
 %{_datadir}/applications/kvkbd.desktop
-# %{_datadir}/applications/kvkbd
 %lang(en) %{_docdir}/HTML/en/kvkbd
 
