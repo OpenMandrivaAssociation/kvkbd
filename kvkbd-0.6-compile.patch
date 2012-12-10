@@ -1,0 +1,11 @@
+--- kvkbd-0.6/src/CMakeLists.txt.bero	2012-12-05 13:59:10.462979631 +0100
++++ kvkbd-0.6/src/CMakeLists.txt	2012-12-05 13:59:18.427074431 +0100
+@@ -22,7 +22,7 @@ QT4_ADD_DBUS_ADAPTOR(kvkbd_SRCS org.kde.
+ 
+ kde4_add_executable(kvkbd ${kvkbd_SRCS})
+ 
+-target_link_libraries(kvkbd ${KDE4_KDECORE_LIBS} Xtst ${KDE4_KDEUI_LIBS})
++target_link_libraries(kvkbd ${KDE4_KDECORE_LIBS} X11 Xtst ${KDE4_KDEUI_LIBS})
+ 
+ install(TARGETS kvkbd ${INSTALL_TARGETS_DEFAULT_ARGS})
+ 

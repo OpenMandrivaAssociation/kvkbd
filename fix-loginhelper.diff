@@ -1,5 +1,5 @@
---- src/mainwidget.cpp.sav	2008-10-12 22:33:26.000000000 +0200
-+++ src/mainwidget.cpp	2009-06-29 13:01:17.000000000 +0200
+--- kvkbd/src/mainwidget.cpp.sav	2008-10-12 22:33:26.000000000 +0200
++++ kvkbd/src/mainwidget.cpp	2009-06-29 13:01:17.000000000 +0200
 @@ -938,6 +938,23 @@ void MainWidget::setupKeyboard()
      connect(min, SIGNAL(keyClick(unsigned int)), this, SLOT(keyPress(unsigned int)));
  }
@@ -24,8 +24,8 @@
  // TODO: find a way to hide the widget before asking for quit
  // FIXME: clicking on the tray icon to hide/show the widget only work for showinButtong it
  KbdTray::KbdTray(MainWidget* parent) : KSystemTrayIcon(parent)
---- src/main.h.sav	2008-09-10 09:30:14.000000000 +0200
-+++ src/main.h	1970-01-01 01:00:00.000000000 +0100
+--- kvkbd/src/main.h.sav	2008-09-10 09:30:14.000000000 +0200
++++ kvkbd/src/main.h	1970-01-01 01:00:00.000000000 +0100
 @@ -1,35 +0,0 @@
 -/*
 - * This file is part of the Kvkbd project.
@@ -62,8 +62,8 @@
 -};
 -
 -#endif //MAIN_H
---- src/main.cpp.sav	2008-10-21 18:37:09.000000000 +0200
-+++ src/main.cpp	2009-06-29 13:06:37.000000000 +0200
+--- kvkbd/src/main.cpp.sav	2008-10-21 18:37:09.000000000 +0200
++++ kvkbd/src/main.cpp	2009-06-29 13:06:37.000000000 +0200
 @@ -19,8 +19,6 @@
   * Boston, MA 02110-1301, USA.
   */
@@ -127,8 +127,8 @@
 -//   }
 -//   return 0;
 -//  };
---- src/mainwidget.h.sav	2008-10-11 15:01:35.000000000 +0200
-+++ src/mainwidget.h	2009-06-29 13:02:38.000000000 +0200
+--- kvkbd/src/mainwidget.h.sav	2008-10-11 15:01:35.000000000 +0200
++++ kvkbd/src/mainwidget.h	2009-06-29 13:02:38.000000000 +0200
 @@ -29,6 +29,7 @@
  #include "resizabledragwidget.h"
  
