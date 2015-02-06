@@ -10,7 +10,7 @@ Url:            http://kde-apps.org/content/show.php/Kvkbd+-+KDE4?content=94374
 Group:          Graphical desktop/KDE 
 Summary:        A virtual keyboard for KDE
 Version:        0.6
-Release:        %mkrel 1
+Release:        2
 Source:         94374-kvkbd-0.6.tar.gz
 Patch0:		kvkbd-0.6-compile.patch
 Patch1:         fix-loginhelper.diff
