@@ -22,7 +22,7 @@ of the keyboard layout, scripting with DBus, etc.
  
 %prep
 %setup -n %{name}-%{version} -q
-%apply_patches
+%autopatch -p1
 
 %build
 %cmake_kde4
