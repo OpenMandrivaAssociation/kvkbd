@@ -6,7 +6,7 @@ Name:           kvkbd
 BuildRequires:  libxslt-devel task-kde4-devel
 BuildRequires:	pkgconfig(xi) pkgconfig(xtst)
 License:        GPLv2+
-Url:            http://kde-apps.org/content/show.php/Kvkbd+-+KDE4?content=94374
+Url:            https://kde-apps.org/content/show.php/Kvkbd+-+KDE4?content=94374
 Group:          Graphical desktop/KDE 
 Summary:        A virtual keyboard for KDE
 Version:        0.6
