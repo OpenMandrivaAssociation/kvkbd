@@ -3,6 +3,7 @@
 %define debug_package %nil
 
 Name:           kvkbd
+BuildRequires:	make
 BuildRequires:  libxslt-devel task-kde4-devel
 BuildRequires:	pkgconfig(xi) pkgconfig(xtst)
 License:        GPLv2+
